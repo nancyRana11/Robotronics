@@ -10,7 +10,13 @@ import'verification.dart';
 import 'create_account_Interests.dart';
 import'create_account_image.dart';
 import 'create_account2.dart';
-
+import 'DeliverYourGoodsScreen.dart';
+import'SearchForRides.dart';
+import 'SearchForRidesOthers.dart';
+import'chats.dart';
+import 'insurance.dart';
+import'Tracking.dart';
+import'SOS.dart';
 
 
 void main() {
@@ -26,7 +32,7 @@ class FlutterApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SplashScreen(),
+        home: SOSPage(),
         routes:{
         '/createAccount': (context) =>CreateAccountScreen(),
 
