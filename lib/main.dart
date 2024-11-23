@@ -6,18 +6,18 @@ import 'create_account_screen.dart';
 import 'home_main.dart';
 import 'verification.dart';
 import 'create_account_vehicle.dart';
-import'verification.dart';
+import 'verification.dart';
 import 'create_account_Interests.dart';
-import'create_account_image.dart';
+import 'create_account_image.dart';
 import 'create_account2.dart';
-import 'DeliverYourGoodsScreen.dart';
-import'SearchForRides.dart';
-import 'SearchForRidesOthers.dart';
-import'chats.dart';
-import 'insurance.dart';
-import'Tracking.dart';
-import'SOS.dart';
 
+import 'DeliverYourGoodsScreen.dart';
+import 'SearchForRides.dart';
+import 'SearchForRidesOthers.dart';
+import 'chats.dart';
+import 'insurance.dart';
+import 'Tracking.dart';
+import 'SOS.dart';
 
 void main() {
   runApp(FlutterApp());
@@ -33,14 +33,9 @@ class FlutterApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: SOSPage(),
-        routes:{
-        '/createAccount': (context) =>CreateAccountScreen(),
-
-
-      }
-
-
-    );
+        routes: {
+          '/createAccount': (context) => CreateAccountScreen(),
+        });
   }
 }
 
@@ -49,7 +44,8 @@ class SplashScreen extends StatefulWidget {
   _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen>
+    with TickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _animation;
   late final AnimationController _gaadiController;
@@ -115,7 +111,8 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
 
     // Navigate to DashBoardScreen after 7 seconds
     Future.delayed(Duration(seconds: 7), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => LoginScreen()));
     });
   }
 
@@ -174,7 +171,6 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
               child: Container(
                 width: displayWidth,
                 height: displayHeight,
-
                 child: ClipOval(
                   child: Image.asset(
                     'images/cars.png',
@@ -247,7 +243,11 @@ class GradientText extends StatelessWidget {
   final LinearGradient gradient;
   final Color strokeColor;
 
-  GradientText({required this.text, required this.fontSize, required this.gradient, required this.strokeColor});
+  GradientText(
+      {required this.text,
+      required this.fontSize,
+      required this.gradient,
+      required this.strokeColor});
 
   @override
   Widget build(BuildContext context) {

@@ -20,7 +20,7 @@ class SearchForRidesScreen extends StatelessWidget {
             children: [
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center, 
                 children: [
                   _buildRoundedButton(context, 'Self', Colors.black54),
                   SizedBox(width: 20),
