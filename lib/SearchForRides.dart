@@ -16,13 +16,19 @@ class SearchForRidesScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start, 
             children: [
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center, 
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  _buildRoundedButton(context, 'Self', Colors.black54),
+                  _buildRoundedButton(context, 'Self', Colors.black54,(){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SearchForRidesScreen()),
+                    );
+
+                  }),
                   SizedBox(width: 20),
                   _buildRoundedButton(context, 'Others', Colors.lightBlue, () {
                     Navigator.push(

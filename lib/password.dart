@@ -46,6 +46,7 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, '/verificationPage');
                     // Handle back button press
                   },
                   child: Text('Back'),
@@ -55,6 +56,7 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, '/createAccount2');
                     // Handle next button press
                   },
                   child: Text('Next'),
@@ -65,14 +67,7 @@ class _CreatePasswordScreenState extends State<CreatePasswordScreen> {
               ],
             ),
             SizedBox(height: 20),
-            Center(
-              child: TextButton(
-                onPressed: () {
-                  // Handle "Already have an account" button press
-                },
-                child: Text('Already have an account?'),
-              ),
-            ),
+
           ],
         ),
       ),

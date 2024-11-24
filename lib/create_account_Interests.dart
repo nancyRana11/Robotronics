@@ -74,6 +74,7 @@ class _CreateAccountPageState extends State<CreateAccountPageInterest> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/createAccountImage');
                       // Handle back button press
                     },
                     child: Text('Back'),
@@ -83,6 +84,7 @@ class _CreateAccountPageState extends State<CreateAccountPageInterest> {
                   ),
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/createAccountVehicle');
                       // Handle next button press
                     },
                     child: Text('Next'),

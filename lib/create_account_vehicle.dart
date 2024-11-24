@@ -41,6 +41,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/createAccountInterest');
                       // Handle back button press
                     },
                     child: Text('Back'),
@@ -50,6 +51,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/liscenceInfo');
                       // Handle next button press
                     },
                     child: Text('Next'),
@@ -63,6 +65,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, '/liscenceInfo');
                     // Handle skip button press
                   },
                   child: Text('Skip'),
@@ -72,14 +75,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 ),
               ),
               SizedBox(height: 20),
-              Center(
-                child: TextButton(
-                  onPressed: () {
-                    // Handle "Already have an account" button press
-                  },
-                  child: Text('Already have an account?'),
-                ),
-              ),
+
             ],
           ),
         ),

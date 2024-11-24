@@ -129,7 +129,7 @@ class LoginScreen extends StatelessWidget {
                               ),
                             ),
                             onPressed: () {
-                              Navigator.pushNamed(context, '/create_account');
+                              Navigator.pushNamed(context, '/loginPage');
                             },
                             child: Text('Login'),
                           ),

@@ -39,17 +39,19 @@ class CreateAccountScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                // ElevatedButton(
+                //   onPressed: () {
+                //     // Handle back button press
+                //   },
+                //   child: Text('Back'),
+                //   style: ElevatedButton.styleFrom(
+                //     backgroundColor: Colors.red, // Red color for back button
+                //   ),
+                // ),
                 ElevatedButton(
                   onPressed: () {
-                    // Handle back button press
-                  },
-                  child: Text('Back'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red, // Red color for back button
-                  ),
-                ),
-                ElevatedButton(
-                  onPressed: () {
+
+                    Navigator.pushNamed(context, '/verificationPage');
                     // Handle next button press
                   },
                   child: Text('Next'),
@@ -63,6 +65,7 @@ class CreateAccountScreen extends StatelessWidget {
             Center(
               child: TextButton(
                 onPressed: () {
+                  Navigator.pushNamed(context, '/loginPage');
                   // Handle "Already have an account" button press
                 },
                 child: Text('Already have an account?'),

@@ -52,6 +52,8 @@ class VerificationScreen extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/createAccount');
+
                       // Handle back button press
                     },
                     child: Text('Back'),
@@ -61,6 +63,7 @@ class VerificationScreen extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, '/createPassword');
                       // Handle next button press
                     },
                     child: Text('Next'),
@@ -71,14 +74,7 @@ class VerificationScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Center(
-                child: TextButton(
-                  onPressed: () {
-                    // Handle "Already have an account" button press
-                  },
-                  child: Text('Already have an account?'),
-                ),
-              ),
+
             ],
           ),
         ),

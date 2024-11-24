@@ -18,6 +18,11 @@ import 'chats.dart';
 import 'insurance.dart';
 import 'Tracking.dart';
 import 'SOS.dart';
+import'login_page.dart';
+import'password.dart';
+import 'liscence.dart';
+import'TermsAndConditions.dart';
+import'home_main.dart';
 
 void main() {
   runApp(FlutterApp());
@@ -32,9 +37,21 @@ class FlutterApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SOSPage(),
+        home:SplashScreen(),
         routes: {
           '/createAccount': (context) => CreateAccountScreen(),
+          '/loginPage':(context) =>LoginPage(),
+          '/verificationPage':(context) => VerificationScreen(),
+          '/createPassword' :(context) => CreatePasswordScreen(),
+          '/createAccount2' :(context)=> CreateAccountPage2(),
+          '/createAccountImage':(context)=>CreateAccountPageImage(),
+          '/createAccountInterest' :(context) =>CreateAccountPageInterest(),
+          '/createAccountVehicle' :(context) =>CreateAccountPage(),
+          '/liscenceInfo': (context)=>LicenseInformationPage(),
+          '/TermsandConditions':(context)=>TermsAndConditionsPage(),
+          '/homeMain':(Context)=>AfterLoginScreen(),
+
+
         });
   }
 }
